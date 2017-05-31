@@ -1,5 +1,5 @@
 {
-  "name": "dns-express",
+  "name": "libdns",
   "version": "0.1.0",
   "description": "DNS library for server and proxy",
   "main": "index.js",
