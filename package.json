@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/kaija/dns-express#readme",
   "dependencies": {
+    "bunyan": "^1.8.10",
+    "cares": "^1.1.8",
+    "ipaddr.js": "^1.3.0",
     "mocha": "^3.4.2"
   }
 }
