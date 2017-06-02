@@ -1,6 +1,6 @@
 {
   "name": "libdns",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DNS library for server and proxy",
   "main": "index.js",
   "scripts": {
