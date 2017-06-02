@@ -33,7 +33,7 @@ server.on('query', function(query) {
     var domain = query.name();
     if ( !domain ) return;
     console.log(domain);
-    upstream.query(domain, {type: query._question.type, class: cares.NS_C_ANY,}, (err, response) => {
+    upstream.query(domain, {type: query._question.type, class: cares.NS_C_IN,}, (err, response) => {
         //console.log(err);
         //console.log(response);
         feedanser(domain, query, response);
