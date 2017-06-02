@@ -12,11 +12,6 @@ server.listen(53, '127.0.0.1', function() {
 });
 
 
-var cares2type = new Map();
-
-var type2cares = new Map();
-type2cares.set('ANY');
-
 function feedanser(domain, query, response){
     response.answer.forEach(function(ans) {
         if (ans.type == cares.NS_T_A) {
