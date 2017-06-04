@@ -1,8 +1,8 @@
 {
   "name": "libdns",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "DNS library for server and proxy",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "make test"
   },
