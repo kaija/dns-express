@@ -22,7 +22,7 @@ This library is forked from https://github.com/trevoro/node-named
 ### Create a multiple upstream DNS proxy
 
 ```javascript
-var named = require('../lib');
+var named = require('libdns');
 
 var proxy = named.createProxy(['8.8.8.8', '168.95.1.1']);
 
@@ -36,7 +36,7 @@ proxy.listen(53, '127.0.0.1', function() {
 ### Bump some domain
 
 ```javascript
-var named = require('../lib');
+var named = require('libdns');
 
 function before_query(domain){
     console.log(domain);
