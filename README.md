@@ -19,6 +19,12 @@ This library is forked from https://github.com/trevoro/node-named
 * SRV
 
 
+## How to use?
+
+```sh
+npm install --save libdns
+```
+
 ### Create a multiple upstream DNS proxy
 
 ```javascript
