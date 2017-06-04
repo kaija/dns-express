@@ -1,41 +1,3 @@
-# libdns
-DNS library for server and proxy
-
-This library is forked from https://github.com/trevoro/node-named
-
-## Enhancement
-
-* Support proxy mode with multiple nameserver upstream
-* Support hook callback before and after query
-* Example of DNS blacklist. https://www.projecthoneypot.org/httpbl.php
-
-## Support Record Type
-
-* A
-* AAAA
-* SOA
-* MX
-* TXT
-* SRV
-
-
-### Create a multiple upstream DNS proxy
-
-```javascript
-var named = require('../lib');
-
-var proxy = named.createProxy(['8.8.8.8', '168.95.1.1']);
-
-proxy.listen(53, '127.0.0.1', function() {
-    console.log("Listen DNS on port 53");
-});
-
-```
-
-
-### Bump some domain
-
-```javascript
 var named = require('../lib');
 
 function before_query(domain){
@@ -63,4 +25,3 @@ var proxy = named.createProxy(['8.8.8.8', '168.95.1.1'], {before: before_query, 
 proxy.listen(53, '127.0.0.1', function() {
     console.log("Listen DNS on port 53");
 });
-```
